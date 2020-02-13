@@ -1,4 +1,4 @@
-# RestAssured-ExtentRport
+# RestAssured-ExtentReport
 projeto de teste de API com RestAssured, TestNG e ExtenteReport
 
 Passo 1 - Clone o projeto
