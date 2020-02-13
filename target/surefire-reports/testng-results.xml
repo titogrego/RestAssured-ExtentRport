@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test Rest Assured" duration-ms="15879" started-at="2020-02-13T16:04:29 BRST" finished-at="2020-02-13T16:04:45 BRST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="15879" started-at="2020-02-13T16:04:29 BRST" finished-at="2020-02-13T16:04:45 BRST">
+      <class name="tests.TransacoesTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.TransacoesTest@15bb6bea]" name="setUp" is-config="true" duration-ms="4315" started-at="2020-02-13T16:04:29 BRST" finished-at="2020-02-13T16:04:33 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deveIncluirContaComSucesso()[pri:2, instance:tests.TransacoesTest@15bb6bea]" name="deveIncluirContaComSucesso" duration-ms="950" started-at="2020-02-13T16:04:33 BRST" description="Teste para inclusão de uma nova conta" finished-at="2020-02-13T16:04:34 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deveIncluirContaComSucesso -->
+        <test-method status="PASS" signature="deveAlterarContaComSucesso()[pri:3, instance:tests.TransacoesTest@15bb6bea]" name="deveAlterarContaComSucesso" duration-ms="896" started-at="2020-02-13T16:04:34 BRST" description="Teste para alteração de uma conta" finished-at="2020-02-13T16:04:35 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deveAlterarContaComSucesso -->
+        <test-method status="PASS" signature="naoDeveInserirContaRepetida()[pri:4, instance:tests.TransacoesTest@15bb6bea]" name="naoDeveInserirContaRepetida" duration-ms="791" started-at="2020-02-13T16:04:35 BRST" description="Teste para validar que não é possível incluir conta repetida" finished-at="2020-02-13T16:04:36 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- naoDeveInserirContaRepetida -->
+        <test-method status="PASS" signature="deveInserirMovimentacaoComSucesso()[pri:5, instance:tests.TransacoesTest@15bb6bea]" name="deveInserirMovimentacaoComSucesso" duration-ms="1307" started-at="2020-02-13T16:04:36 BRST" description="Teste para inclusão de uma nova movimentação" finished-at="2020-02-13T16:04:37 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deveInserirMovimentacaoComSucesso -->
+        <test-method status="PASS" signature="deveValidarCamposObrigatoriosNaMovimentacao()[pri:6, instance:tests.TransacoesTest@15bb6bea]" name="deveValidarCamposObrigatoriosNaMovimentacao" duration-ms="820" started-at="2020-02-13T16:04:37 BRST" description="Teste para validar campos obrigatórios na movimentação" finished-at="2020-02-13T16:04:38 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deveValidarCamposObrigatoriosNaMovimentacao -->
+        <test-method status="PASS" signature="naoDeveInserirMovimentacaoComDataFutura()[pri:7, instance:tests.TransacoesTest@15bb6bea]" name="naoDeveInserirMovimentacaoComDataFutura" duration-ms="784" started-at="2020-02-13T16:04:38 BRST" description="Teste para validar não ser possível a inclusão de movimentação com data futura" finished-at="2020-02-13T16:04:39 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- naoDeveInserirMovimentacaoComDataFutura -->
+        <test-method status="PASS" signature="naoDeveRemoverContaComMovimentacao()[pri:8, instance:tests.TransacoesTest@15bb6bea]" name="naoDeveRemoverContaComMovimentacao" duration-ms="804" started-at="2020-02-13T16:04:39 BRST" description="Teste para validar que não seja possivel remoção de uma conta com movimentação" finished-at="2020-02-13T16:04:39 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- naoDeveRemoverContaComMovimentacao -->
+        <test-method status="PASS" signature="deveCalcularSaldoContas()[pri:9, instance:tests.TransacoesTest@15bb6bea]" name="deveCalcularSaldoContas" duration-ms="818" started-at="2020-02-13T16:04:39 BRST" description="Teste para calcular o saldo da Conta" finished-at="2020-02-13T16:04:40 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deveCalcularSaldoContas -->
+        <test-method status="PASS" signature="deveRemoverMovimentacao()[pri:10, instance:tests.TransacoesTest@15bb6bea]" name="deveRemoverMovimentacao" duration-ms="756" started-at="2020-02-13T16:04:40 BRST" description="Teste para remover movimentação" finished-at="2020-02-13T16:04:41 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deveRemoverMovimentacao -->
+        <test-method status="PASS" signature="deveValidaroSchemaDasContas()[pri:11, instance:tests.TransacoesTest@15bb6bea]" name="deveValidaroSchemaDasContas" duration-ms="1344" started-at="2020-02-13T16:04:41 BRST" description="Teste validar Schema das contas" finished-at="2020-02-13T16:04:42 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deveValidaroSchemaDasContas -->
+        <test-method status="PASS" signature="deveRemoverConta()[pri:12, instance:tests.TransacoesTest@15bb6bea]" name="deveRemoverConta" duration-ms="745" started-at="2020-02-13T16:04:42 BRST" description="Teste para validar a exclusão de uma conta" finished-at="2020-02-13T16:04:43 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deveRemoverConta -->
+        <test-method status="PASS" signature="deveValidarSeContaFoiRemovida()[pri:13, instance:tests.TransacoesTest@15bb6bea]" name="deveValidarSeContaFoiRemovida" duration-ms="758" started-at="2020-02-13T16:04:43 BRST" description="Teste para validar se conta foi realmente excluída" finished-at="2020-02-13T16:04:44 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deveValidarSeContaFoiRemovida -->
+        <test-method status="PASS" signature="naoDeveAcessarApiSemToken()[pri:14, instance:tests.TransacoesTest@15bb6bea]" name="naoDeveAcessarApiSemToken" duration-ms="752" started-at="2020-02-13T16:04:44 BRST" description="Teste validar que não é possivel acessar a API sem o tokem" finished-at="2020-02-13T16:04:45 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- naoDeveAcessarApiSemToken -->
+      </class> <!-- tests.TransacoesTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Test Rest Assured -->
+</testng-results>

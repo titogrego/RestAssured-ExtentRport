@@ -1,0 +1,57 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "required": [
+      "id",
+      "nome",
+      "visivel",
+      "usuario_id"
+    ],
+    "properties": {
+      "id": {
+        "$id": "#/items/properties/id",
+        "type": "integer",
+        "title": "The Id Schema",
+        "default": 0,
+        "examples": [
+          65459
+        ]
+      },
+      "nome": {
+        "$id": "#/items/properties/nome",
+        "type": "string",
+        "title": "The Nome Schema",
+        "default": "",
+        "examples": [
+          "conta 6507791115 alterada"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "visivel": {
+        "$id": "#/items/properties/visivel",
+        "type": "boolean",
+        "title": "The Visivel Schema",
+        "default": false,
+        "examples": [
+          true
+        ]
+      },
+      "usuario_id": {
+        "$id": "#/items/properties/usuario_id",
+        "type": "integer",
+        "title": "The Usuario_id Schema",
+        "default": 0,
+        "examples": [
+          4970
+        ]
+      }
+    }
+  }
+}

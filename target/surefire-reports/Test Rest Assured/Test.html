@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Feb 13 16:04:29 BRST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>15 seconds (15879 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TransacoesTest.deveAlterarContaComSucesso()'><b>deveAlterarContaComSucesso</b><br>Test class: tests.TransacoesTest<br>Test method: Teste para alteração de uma conta</td>
+<td></td>
+<td>0</td>
+<td>tests.TransacoesTest@15bb6bea</td></tr>
+<tr>
+<td title='tests.TransacoesTest.deveCalcularSaldoContas()'><b>deveCalcularSaldoContas</b><br>Test class: tests.TransacoesTest<br>Test method: Teste para calcular o saldo da Conta</td>
+<td></td>
+<td>0</td>
+<td>tests.TransacoesTest@15bb6bea</td></tr>
+<tr>
+<td title='tests.TransacoesTest.deveIncluirContaComSucesso()'><b>deveIncluirContaComSucesso</b><br>Test class: tests.TransacoesTest<br>Test method: Teste para inclusão de uma nova conta</td>
+<td></td>
+<td>0</td>
+<td>tests.TransacoesTest@15bb6bea</td></tr>
+<tr>
+<td title='tests.TransacoesTest.deveInserirMovimentacaoComSucesso()'><b>deveInserirMovimentacaoComSucesso</b><br>Test class: tests.TransacoesTest<br>Test method: Teste para inclusão de uma nova movimentação</td>
+<td></td>
+<td>1</td>
+<td>tests.TransacoesTest@15bb6bea</td></tr>
+<tr>
+<td title='tests.TransacoesTest.deveRemoverConta()'><b>deveRemoverConta</b><br>Test class: tests.TransacoesTest<br>Test method: Teste para validar a exclusão de uma conta</td>
+<td></td>
+<td>0</td>
+<td>tests.TransacoesTest@15bb6bea</td></tr>
+<tr>
+<td title='tests.TransacoesTest.deveRemoverMovimentacao()'><b>deveRemoverMovimentacao</b><br>Test class: tests.TransacoesTest<br>Test method: Teste para remover movimentação</td>
+<td></td>
+<td>0</td>
+<td>tests.TransacoesTest@15bb6bea</td></tr>
+<tr>
+<td title='tests.TransacoesTest.deveValidarCamposObrigatoriosNaMovimentacao()'><b>deveValidarCamposObrigatoriosNaMovimentacao</b><br>Test class: tests.TransacoesTest<br>Test method: Teste para validar campos obrigatórios na movimentação</td>
+<td></td>
+<td>0</td>
+<td>tests.TransacoesTest@15bb6bea</td></tr>
+<tr>
+<td title='tests.TransacoesTest.deveValidarSeContaFoiRemovida()'><b>deveValidarSeContaFoiRemovida</b><br>Test class: tests.TransacoesTest<br>Test method: Teste para validar se conta foi realmente excluída</td>
+<td></td>
+<td>0</td>
+<td>tests.TransacoesTest@15bb6bea</td></tr>
+<tr>
+<td title='tests.TransacoesTest.deveValidaroSchemaDasContas()'><b>deveValidaroSchemaDasContas</b><br>Test class: tests.TransacoesTest<br>Test method: Teste validar Schema das contas</td>
+<td></td>
+<td>1</td>
+<td>tests.TransacoesTest@15bb6bea</td></tr>
+<tr>
+<td title='tests.TransacoesTest.naoDeveAcessarApiSemToken()'><b>naoDeveAcessarApiSemToken</b><br>Test class: tests.TransacoesTest<br>Test method: Teste validar que não é possivel acessar a API sem o tokem</td>
+<td></td>
+<td>0</td>
+<td>tests.TransacoesTest@15bb6bea</td></tr>
+<tr>
+<td title='tests.TransacoesTest.naoDeveInserirContaRepetida()'><b>naoDeveInserirContaRepetida</b><br>Test class: tests.TransacoesTest<br>Test method: Teste para validar que não é possível incluir conta repetida</td>
+<td></td>
+<td>0</td>
+<td>tests.TransacoesTest@15bb6bea</td></tr>
+<tr>
+<td title='tests.TransacoesTest.naoDeveInserirMovimentacaoComDataFutura()'><b>naoDeveInserirMovimentacaoComDataFutura</b><br>Test class: tests.TransacoesTest<br>Test method: Teste para validar não ser possível a inclusão de movimentação com data futura</td>
+<td></td>
+<td>0</td>
+<td>tests.TransacoesTest@15bb6bea</td></tr>
+<tr>
+<td title='tests.TransacoesTest.naoDeveRemoverContaComMovimentacao()'><b>naoDeveRemoverContaComMovimentacao</b><br>Test class: tests.TransacoesTest<br>Test method: Teste para validar que não seja possivel remoção de uma conta com movimentação</td>
+<td></td>
+<td>0</td>
+<td>tests.TransacoesTest@15bb6bea</td></tr>
+</table><p>
+</body>
+</html>

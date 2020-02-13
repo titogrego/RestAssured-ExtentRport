@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Test_Rest_Assured">
+              <span class="suite-name border-passed">Test Rest Assured</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Test_Rest_Assured">
+                    <span>C:\Users\Framework\eclipse-workspace\RestAssured_QuartaFrame\src\test\java\suites\TestNG.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Test_Rest_Assured">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Test_Rest_Assured">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Test_Rest_Assured">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Test_Rest_Assured">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Test_Rest_Assured">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Test_Rest_Assured">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">13 methods,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Test_Rest_Assured" class="hide-methods passed suite-Test_Rest_Assured"> (hide)</a> <!-- hide-methods passed suite-Test_Rest_Assured -->
+                      <a href="#" panel-name="suite-Test_Rest_Assured" class="show-methods passed suite-Test_Rest_Assured"> (show)</a> <!-- show-methods passed suite-Test_Rest_Assured -->
+                    </span>
+                    <div class="method-list-content passed suite-Test_Rest_Assured">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Rest_Assured" title="tests.TransacoesTest" hash-for-method="deveAlterarContaComSucesso">deveAlterarContaComSucesso</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Rest_Assured" title="tests.TransacoesTest" hash-for-method="deveCalcularSaldoContas">deveCalcularSaldoContas</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Rest_Assured" title="tests.TransacoesTest" hash-for-method="deveIncluirContaComSucesso">deveIncluirContaComSucesso</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Rest_Assured" title="tests.TransacoesTest" hash-for-method="deveInserirMovimentacaoComSucesso">deveInserirMovimentacaoComSucesso</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Rest_Assured" title="tests.TransacoesTest" hash-for-method="deveRemoverConta">deveRemoverConta</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Rest_Assured" title="tests.TransacoesTest" hash-for-method="deveRemoverMovimentacao">deveRemoverMovimentacao</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Rest_Assured" title="tests.TransacoesTest" hash-for-method="deveValidarCamposObrigatoriosNaMovimentacao">deveValidarCamposObrigatoriosNaMovimentacao</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Rest_Assured" title="tests.TransacoesTest" hash-for-method="deveValidarSeContaFoiRemovida">deveValidarSeContaFoiRemovida</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Rest_Assured" title="tests.TransacoesTest" hash-for-method="deveValidaroSchemaDasContas">deveValidaroSchemaDasContas</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Rest_Assured" title="tests.TransacoesTest" hash-for-method="naoDeveAcessarApiSemToken">naoDeveAcessarApiSemToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Rest_Assured" title="tests.TransacoesTest" hash-for-method="naoDeveInserirContaRepetida">naoDeveInserirContaRepetida</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Rest_Assured" title="tests.TransacoesTest" hash-for-method="naoDeveInserirMovimentacaoComDataFutura">naoDeveInserirMovimentacaoComDataFutura</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Rest_Assured" title="tests.TransacoesTest" hash-for-method="naoDeveRemoverContaComMovimentacao">naoDeveRemoverContaComMovimentacao</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Test_Rest_Assured -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Test_Rest_Assured" class="panel Test_Rest_Assured">
+          <div class="suite-Test_Rest_Assured-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TransacoesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deveAlterarContaComSucesso">
+                  </a> <!-- deveAlterarContaComSucesso -->
+                  <span class="method-name">deveAlterarContaComSucesso</span>
+                  <em>
+(Teste para alteração de uma conta)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deveCalcularSaldoContas">
+                  </a> <!-- deveCalcularSaldoContas -->
+                  <span class="method-name">deveCalcularSaldoContas</span>
+                  <em>
+(Teste para calcular o saldo da Conta)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deveIncluirContaComSucesso">
+                  </a> <!-- deveIncluirContaComSucesso -->
+                  <span class="method-name">deveIncluirContaComSucesso</span>
+                  <em>
+(Teste para inclusão de uma nova conta)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deveInserirMovimentacaoComSucesso">
+                  </a> <!-- deveInserirMovimentacaoComSucesso -->
+                  <span class="method-name">deveInserirMovimentacaoComSucesso</span>
+                  <em>
+(Teste para inclusão de uma nova movimentação)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deveRemoverConta">
+                  </a> <!-- deveRemoverConta -->
+                  <span class="method-name">deveRemoverConta</span>
+                  <em>
+(Teste para validar a exclusão de uma conta)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deveRemoverMovimentacao">
+                  </a> <!-- deveRemoverMovimentacao -->
+                  <span class="method-name">deveRemoverMovimentacao</span>
+                  <em>
+(Teste para remover movimentação)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deveValidarCamposObrigatoriosNaMovimentacao">
+                  </a> <!-- deveValidarCamposObrigatoriosNaMovimentacao -->
+                  <span class="method-name">deveValidarCamposObrigatoriosNaMovimentacao</span>
+                  <em>
+(Teste para validar campos obrigatórios na movimentação)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deveValidarSeContaFoiRemovida">
+                  </a> <!-- deveValidarSeContaFoiRemovida -->
+                  <span class="method-name">deveValidarSeContaFoiRemovida</span>
+                  <em>
+(Teste para validar se conta foi realmente excluída)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deveValidaroSchemaDasContas">
+                  </a> <!-- deveValidaroSchemaDasContas -->
+                  <span class="method-name">deveValidaroSchemaDasContas</span>
+                  <em>
+(Teste validar Schema das contas)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="naoDeveAcessarApiSemToken">
+                  </a> <!-- naoDeveAcessarApiSemToken -->
+                  <span class="method-name">naoDeveAcessarApiSemToken</span>
+                  <em>
+(Teste validar que não é possivel acessar a API sem o tokem)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="naoDeveInserirContaRepetida">
+                  </a> <!-- naoDeveInserirContaRepetida -->
+                  <span class="method-name">naoDeveInserirContaRepetida</span>
+                  <em>
+(Teste para validar que não é possível incluir conta repetida)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="naoDeveInserirMovimentacaoComDataFutura">
+                  </a> <!-- naoDeveInserirMovimentacaoComDataFutura -->
+                  <span class="method-name">naoDeveInserirMovimentacaoComDataFutura</span>
+                  <em>
+(Teste para validar não ser possível a inclusão de movimentação com data futura)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="naoDeveRemoverContaComMovimentacao">
+                  </a> <!-- naoDeveRemoverContaComMovimentacao -->
+                  <span class="method-name">naoDeveRemoverContaComMovimentacao</span>
+                  <em>
+(Teste para validar que não seja possivel remoção de uma conta com movimentação)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Rest_Assured-class-passed -->
+        </div> <!-- panel Test_Rest_Assured -->
+        <div panel-name="test-xml-Test_Rest_Assured" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Framework\eclipse-workspace\RestAssured_QuartaFrame\src\test\java\suites\TestNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Test Rest Assured&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.TransacoesTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Test Rest Assured --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Test_Rest_Assured" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Test Rest Assured</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Test_Rest_Assured" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Test Rest Assured</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Test_Rest_Assured" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Test Rest Assured</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Test_Rest_Assured');
+function tableData_Test_Rest_Assured() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(13);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'deveValidaroSchemaDasContas')
+data.setCell(0, 2, 'tests.TransacoesTest')
+data.setCell(0, 3, 1344);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'deveInserirMovimentacaoComSucesso')
+data.setCell(1, 2, 'tests.TransacoesTest')
+data.setCell(1, 3, 1307);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'deveIncluirContaComSucesso')
+data.setCell(2, 2, 'tests.TransacoesTest')
+data.setCell(2, 3, 950);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'deveAlterarContaComSucesso')
+data.setCell(3, 2, 'tests.TransacoesTest')
+data.setCell(3, 3, 896);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'deveValidarCamposObrigatoriosNaMovimentacao')
+data.setCell(4, 2, 'tests.TransacoesTest')
+data.setCell(4, 3, 820);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'deveCalcularSaldoContas')
+data.setCell(5, 2, 'tests.TransacoesTest')
+data.setCell(5, 3, 818);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'naoDeveRemoverContaComMovimentacao')
+data.setCell(6, 2, 'tests.TransacoesTest')
+data.setCell(6, 3, 804);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'naoDeveInserirContaRepetida')
+data.setCell(7, 2, 'tests.TransacoesTest')
+data.setCell(7, 3, 791);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'naoDeveInserirMovimentacaoComDataFutura')
+data.setCell(8, 2, 'tests.TransacoesTest')
+data.setCell(8, 3, 784);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'deveValidarSeContaFoiRemovida')
+data.setCell(9, 2, 'tests.TransacoesTest')
+data.setCell(9, 3, 758);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'deveRemoverMovimentacao')
+data.setCell(10, 2, 'tests.TransacoesTest')
+data.setCell(10, 3, 756);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'naoDeveAcessarApiSemToken')
+data.setCell(11, 2, 'tests.TransacoesTest')
+data.setCell(11, 3, 752);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'deveRemoverConta')
+data.setCell(12, 2, 'tests.TransacoesTest')
+data.setCell(12, 3, 745);
+window.suiteTableData['Test_Rest_Assured']= { tableData: data, tableDiv: 'times-div-Test_Rest_Assured'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <div id="times-div-Test_Rest_Assured">
+              </div> <!-- times-div-Test_Rest_Assured -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Test_Rest_Assured" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Test Rest Assured</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Test_Rest_Assured" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Test_Rest_Assured" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TransacoesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">deveIncluirContaComSucesso</span>
+                <span class="method-start">4326 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deveAlterarContaComSucesso</span>
+                <span class="method-start">5282 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">naoDeveInserirContaRepetida</span>
+                <span class="method-start">6178 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deveInserirMovimentacaoComSucesso</span>
+                <span class="method-start">6969 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deveValidarCamposObrigatoriosNaMovimentacao</span>
+                <span class="method-start">8277 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">naoDeveInserirMovimentacaoComDataFutura</span>
+                <span class="method-start">9098 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">naoDeveRemoverContaComMovimentacao</span>
+                <span class="method-start">9883 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deveCalcularSaldoContas</span>
+                <span class="method-start">10687 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deveRemoverMovimentacao</span>
+                <span class="method-start">11506 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deveValidaroSchemaDasContas</span>
+                <span class="method-start">12263 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deveRemoverConta</span>
+                <span class="method-start">13608 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deveValidarSeContaFoiRemovida</span>
+                <span class="method-start">14354 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">naoDeveAcessarApiSemToken</span>
+                <span class="method-start">15112 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
