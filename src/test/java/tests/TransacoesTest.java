@@ -4,12 +4,17 @@ import DTO.ContaDTO;
 import DTO.MovimentacaoDTO;
 import core.BaseTest;
 import static org.hamcrest.Matchers.*;
-
 import io.restassured.RestAssured;
+import io.restassured.filter.log.RequestLoggingFilter;
+import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.specification.FilterableRequestSpecification;
+import listeners.TestListener;
+import org.apache.commons.io.output.WriterOutputStream;
 import org.testng.annotations.Test;
 import utilities.Utils;
+import java.io.PrintStream;
+import java.io.StringWriter;
 import static io.restassured.RestAssured.given;
 
 public class TransacoesTest extends BaseTest{
@@ -29,10 +34,12 @@ public class TransacoesTest extends BaseTest{
 
         CONTA_ID=
                 given()
+                        .log().all()
                         .body(conta)
                         .when()
                         .post(PATH_CONTA)
                         .then()
+                        .log().all()
                         .statusCode(201)
                         .extract().path("id")
         ;
@@ -149,11 +156,9 @@ public class TransacoesTest extends BaseTest{
     public void deveCalcularSaldoContas() {
 
 
-        given()
-
-                .when()
-                .get(PATH_SALDO)
-                .then()
+                given()
+                 .when()
+                .get(PATH_SALDO).then()
                 .statusCode(200)
                 .body("find{it.conta_id=="+CONTA_ID+"}.saldo", is("100.00"))
 
@@ -164,14 +169,11 @@ public class TransacoesTest extends BaseTest{
 
     @Test(description = "Teste para remover movimentação", priority = 10)
     public void deveRemoverMovimentacao() {
-
-
-        given()
+      given()
 
                 .pathParam("id", MOV_ID)
                 .when()
-                .delete(PATH_TRANSACOES+"/{id}")
-                .then()
+                .delete(PATH_TRANSACOES+"/{id}").then()
                 .statusCode(204)
 
 
@@ -184,14 +186,14 @@ public class TransacoesTest extends BaseTest{
 
     @Test(description = "Teste validar Schema das contas", priority = 11)
     public void deveValidaroSchemaDasContas() {
+         given()
 
-        given()
-                .when()
-                .get(PATH_CONTA)
+                .when().get(PATH_CONTA)
                 .then()
                 .statusCode(200)
                 .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("conta.json"))
         ;
+
     }
 
     @Test(description = "Teste para validar a exclusão de uma conta", priority = 12)
@@ -225,7 +227,7 @@ public class TransacoesTest extends BaseTest{
 
     }
 
-    @Test(description = "Teste validar que não é possivel acessar a API sem o tokem", priority = 14)
+    @Test(description = "Teste validar que não é possivel acessar a API sem o tokem", priority = 15)
     public void naoDeveAcessarApiSemToken() {
         FilterableRequestSpecification req = (FilterableRequestSpecification) RestAssured.requestSpecification;
         req.removeHeader("Authorization");
@@ -247,5 +249,27 @@ public class TransacoesTest extends BaseTest{
         mov.setValor(100f);
         mov.setStatus(true);
         return mov;
+    }
+
+    @Test(description = "Exemplo adicionando o log do request e response no relatório", priority = 14)
+    public void deveApresentarOLogDoRequestEResponseNoRelatorio() {
+        requestWriter = new StringWriter();
+        responseWriter = new StringWriter();
+        requestCapture = new PrintStream(new WriterOutputStream(requestWriter));
+        responseCapture = new PrintStream(new WriterOutputStream(responseWriter));
+
+        given()
+                .filter(new RequestLoggingFilter(requestCapture))
+                .filter(new ResponseLoggingFilter(responseCapture))
+                .when().get(PATH_CONTA)
+                .then()
+                .statusCode(200)
+
+        ;
+        requestCapture.flush();
+        responseCapture.flush();
+        TestListener.insertLogToReport("Request: ", requestWriter.toString() );
+        TestListener.insertLogToReport("Response: ",responseWriter.toString());
+
     }
 }
