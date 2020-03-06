@@ -4,15 +4,15 @@ import com.github.javafaker.Faker;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
-import io.restassured.http.ContentType;
-import io.restassured.specification.RequestSpecification;
-
 import static org.hamcrest.Matchers.*;
+
+import listeners.TestListener;
+import org.apache.commons.io.output.WriterOutputStream;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-import utilities.Utils;
+import org.testng.annotations.BeforeTest;
 
-
+import java.io.PrintStream;
+import java.io.StringWriter;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
@@ -22,6 +22,11 @@ public class BaseTest implements Constantes{
 
     public static Faker faker = new Faker(new Locale("pt-BR"));
     public static String token;
+    public  static StringWriter requestWriter;
+    public static PrintStream requestCapture;
+    public  static StringWriter responseWriter;
+    public static PrintStream responseCapture;
+
 
     @BeforeClass
     public static void setUp() throws Exception {
