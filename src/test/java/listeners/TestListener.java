@@ -6,9 +6,12 @@ import org.apache.commons.lang3.StringUtils;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
+import org.apache.commons.io.output.WriterOutputStream;
 import core.BaseTest;
 import utilities.ExtentManager;
+
+import java.io.PrintStream;
+import java.io.StringWriter;
 
 //**********************************************************************************************************
 //Author: Onur Baskirt
@@ -41,7 +44,7 @@ public class TestListener extends BaseTest implements ITestListener {
     @Override
     public synchronized void onTestSuccess(ITestResult result) {
 
-        test.get().pass("Test executado com sucesso!");
+        test.get().pass("Test executado com sucesso!" );
     }
 
     @Override
@@ -60,5 +63,12 @@ public class TestListener extends BaseTest implements ITestListener {
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
         System.out.println(("onTestFailedButWithinSuccessPercentage for " + result.getMethod().getMethodName()));
+    }
+
+    public static  void insertLogToReport(String node,String log){
+        if(test.get()!=null) {
+            test.get().createNode("<b>"+node+"</b>").info("<pre>"+log+"</pre>");
+            //  test.get().info(log);
+        }
     }
 }
